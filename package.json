@@ -1,0 +1,21 @@
+{
+  "name": "js-hindi-youtube",
+  "version": "1.0.0",
+  "description": "a code rep for javascript series at chai or code youtube channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishkashyap1871/js-hindi-youtube.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/manishkashyap1871/js-hindi-youtube/issues"
+  },
+  "homepage": "https://github.com/manishkashyap1871/js-hindi-youtube#readme"
+}
