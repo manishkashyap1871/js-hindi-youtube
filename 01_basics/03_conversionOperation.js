@@ -68,6 +68,8 @@ let prefix_gamecounter =  ++gamecounter
 console.log(postfix_gamecounter);
 console.log(postfix_gamecounter);
 
+//link to study : https://tc39.es/ecma262/multipage/abstract-operations
+
 
 
 
