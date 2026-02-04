@@ -26,12 +26,47 @@ const myfunction = function(){
     console.log("hello");
 }
 
-console.log(typeof heroes); //--> object
-console.log(typeof myfunction); //-->function
-console.log(typeof myobj); //-->object
+// console.log(typeof heroes); //--> object
+// console.log(typeof myfunction); //-->function
+// console.log(typeof myobj); //-->object
 
 // # all non primtive datatype return their object as their type 
 
-//source to study : https://262.ecma-international.org/5.1/#sec-11.4.3
+//source to study : https://262.ecma-international.org/5.1/#sec-11.4.3 
+
+//------------------storage management in js
+// 	Primitive = store single value, copied by value --> stack (call by value)
+//	Non-Primitive = store multiple values, copied by reference --> heap (call by reference)
+//example :
+
+//-------primitive type(call by value)
+let myYoutubeName = "hiteshdotcom"
+let anotherName = myYoutubeName 
+anotherName = "chaiAurCode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+//-------non primitive (call by reference)
+
+let UserOne = {
+    email : "manish@google.com",
+    age : 22
+}
+
+let UserTwo = UserOne
+
+UserTwo.email="manish@yahoo.com"
+UserTwo.age=23
+
+console.log(UserOne.email);
+console.log(UserTwo.email);
+console.log(UserTwo.age);
+console.log(UserOne.age);
+
+
+
+
+
 
 
