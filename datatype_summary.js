@@ -30,4 +30,8 @@ console.log(typeof heroes); //--> object
 console.log(typeof myfunction); //-->function
 console.log(typeof myobj); //-->object
 
+// # all non primtive datatype return their object as their type 
+
+//source to study : https://262.ecma-international.org/5.1/#sec-11.4.3
+
 
