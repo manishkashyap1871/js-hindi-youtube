@@ -9,38 +9,48 @@
 //console.log(c); // o/p -> 30 , here the problem starts that it is giving the output out of its block scope
 
 // solution for this problem
-let a = 100 //global scope
-if(true){
-    let a=10. //block scope
-    const b=20
-    //console.log(`inner a is ${a}`);
-}
-//console.log(a); // o/p -> inner a is 10 
+// let a = 100 //global scope
+// if(true){
+//     let a=10. //block scope
+//     const b=20
+//     console.log(`inner a is ${a}`);
+// }
+// //console.log(a); // o/p -> inner a is 10 
 //                //.       100
 
 // now let us uderstand about the scopes with nested functions
-function one() {
-    const username = "manish"
-    function two(){
-        const website = "manish.com"
-        console.log(username);
-    }
-    //console.log(website); // -> ReferenceError: website is not defined
-    two()
-}
+// function one() {
+//     const username = "manish"
+//     function two(){
+//         const website = "manish.com"
+//         console.log(username);
+//     }
+//     //console.log(website); // -> ReferenceError: website is not defined
+//     two()
+// }
 // one() // without using this "two()" doesn't run because it is nested in one() so without execution of one() , two() can never be executed
 
 // let us take one more example
-if(true){
-    const username = "manish"
-    if(username==="manish"){
-        const website = " youtube"
-        console.log(username+website);
-    }
-    //console.log(website); //-> ReferenceError: website is not defined    
-}
-//console.log(username); // -> ReferenceError: username is not defined
+// if(true){
+//     const username = "manish"
+//     if(username==="manish"){
+//         const website = " youtube"
+//         console.log(username+website);
+//     }
+//     //console.log(website); //-> ReferenceError: website is not defined    
+// }
+// //console.log(username); // -> ReferenceError: username is not defined
 
 
 //----------------------interesting-------------------
 
+//
+console.log(addone(2));  // it gives output "3" easily because we have stored the function value in any constant
+function addone(num){
+    return num+1
+}
+
+//console.log(addtwo(3));  // -> ReferenceError: Cannot access 'addtwo' before initialization
+const addtwo = function(num){
+    return num +2 
+}
