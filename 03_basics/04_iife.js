@@ -26,4 +26,7 @@
     console.log(`hello ${name}`)
 })("manish");
 
+// Always put a ";" after an IIFE
+//Especially when writing multiple IIFEs in the same file.
+
 
