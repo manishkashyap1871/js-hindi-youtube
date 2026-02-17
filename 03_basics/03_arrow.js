@@ -8,37 +8,38 @@ const user = {
     }
 }
 // user.welcomemessage() // -> manish , welcome to this website
-// user.username="hitesh"
+// user.username="hitesh" // here we are switching the context 
 // user.welcomemessage() //-> hitesh , welcome to this website
-// console.log(this); // -> this give {} because in node global environment current context is empty , but if we run this in browser it will give window as output 
- 
-//-----------------normal function
 
+// console.log(this); // -> this give "{}"" because in node global environment current context is empty , but if we run this in browser it will give "window" as output because in browser window in global object
+ 
+// -------------- Now let us understand the difference between the function and object
+
+//-----------------normal function
+ 
 // function chai(){
 //     let username = "manish"
 //     console.log(this.username);
 // }
-// chai() //-> undefined because "this" context can be work within objects only
+// chai() //-> undefined because "this" context can be work within objects only not function 
 
-//-----------------normal function
-// const chai = function(){
-//     let username = "manish";
-//     age = 21;
-//     console.log(this.username);  
-//     console.log(this);
-    
-// }
-// chai() // output -> undefined because "this" context can be work within objects only
+//-----------------normal function (another method of defining function)
+
+const chai = function(){
+    let username = "manish";
+    //console.log(this.username);  // output -> undefined because "this" context can be work within objects only
+    console.log(this); // this will give a very big output   
+}
+chai() 
 
 
 //----------- arrow function
-const chai = () =>{
-    let username = "manish";
-    age = 21;
-    console.log(this.username);  
-    console.log(this);
+// const chai = () =>{
+//     let username = "manish";
+//     console.log(this.username);  // -> undefined
+//     //console.log(this);  // -> {}
     
-}
+// }
 // chai()
 
 // basic differnce between the arrow function and normal function is that in both cases when we run "console.log(this.username);" then o/p -> undefined but when we run "console.log(this);" output are diffrents  
@@ -56,4 +57,5 @@ const chai = () =>{
 //---second (implicit return)
 const addtwo = (num1,num2) => num1+num2 // not need of return because here we don't use "{}" , so basically we use return when we have use "{}"
 console.log(addtwo(5,7));
+const myname = (name) => ({username:"manish"}) //here we treating 
 
