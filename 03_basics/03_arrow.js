@@ -55,7 +55,10 @@ chai()
 // console.log(addtwo(2,3));
 
 //---second (implicit return)
-const addtwo = (num1,num2) => num1+num2 // not need of return because here we don't use "{}" , so basically we use return when we have use "{}"
+const addtwo = (num1,num2) => num1+num2 // not need of "return" keyword because here we don't use "{}" , so basically we use return when we have use "{}"
 console.log(addtwo(5,7));
-const myname = (name) => ({username:"manish"}) //here we treating 
+const myname = (name) => ({username:"manish"}) //here we treating object as element 
+
+
+
 
