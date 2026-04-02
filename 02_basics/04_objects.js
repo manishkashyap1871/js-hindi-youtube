@@ -1,10 +1,10 @@
-//const tinderuser1 = new Object() // ->singleton object
-const tinderuser2 ={} // -> non singleton onject
+//const tinderuser1 = new Object() // ->singleton object : Created using Object constructor
+const tinderuser2 ={} // -> non singleton onject :  Created using object literal
 tinderuser2.name = "manish"
 tinderuser2.id= 1
 tinderuser2.isLoggedin = true
 
-// console.log(tinderuser2);
+ console.log(tinderuser2);
 
 //-->
 const regularuser = {
