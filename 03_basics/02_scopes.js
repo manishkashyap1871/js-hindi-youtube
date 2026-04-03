@@ -19,16 +19,16 @@
 //                //.       100
 
 // now let us uderstand about the scopes with nested functions
-// function one() {
-//     const username = "manish"
-//     function two(){
-//         const website = "manish.com"
-//         console.log(username);
-//     }
-//     //console.log(website); // -> ReferenceError: website is not defined
-//     two()
-// }
-// one() // without using this "two()" doesn't run because it is nested in one() so without execution of one() , two() can never be executed
+function one() {
+    const username = "manish"
+    function two(){
+        const website = "manish.com"
+        console.log(username);
+    }
+    //console.log(website); // -> ReferenceError: website is not defined
+    two()
+}
+one() // without using this "two()" doesn't run because it is nested in one() so without execution of one() , two() can never be executed
 
 // let us take one more example
 // if(true){
